@@ -247,7 +247,24 @@ textarea.form-control{
     font-size: 0.925rem;
     line-height: 1.6;
 }
+.success{
+    background-color:#d1f1d1;
+    color:#0a850a;
+    padding:12px;
+    border:1px solid #92d392;
+    border-radius:5px;
+    margin-top:15px;
+    font-size:15px;
+    font-weight:500;
+}
 
+.failure{
+   color: red;
+   font-size: 20px;
+   
+    
+
+}
 /* ===========================
    RESPONSIVE
 =========================== */
