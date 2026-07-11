@@ -1,0 +1,22 @@
+.hero-banner-section {
+   
+    margin: 0px;
+}
+
+.carousel {
+    margin-top: 0;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.badge-text{
+
+    color: yellow;
+}
+.carousel-item1{
+
+    background-color: linear-gradient(to right, blue, red);
+}
