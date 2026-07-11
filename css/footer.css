@@ -1,0 +1,76 @@
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827 !important;
+}
+
+footer h4{
+    font-size:32px;
+    font-weight:700;
+}
+
+
+footer h6{
+    color:#ffffff !important;
+    letter-spacing:1px;
+}
+
+footer p{
+    color:#9ca3af !important;
+    line-height:1.8;
+}
+
+.footer-link{
+    color:#9ca3af !important;
+    transition:0.3s ease;
+}
+
+.footer-link:hover{
+    color:yellow !important;
+    
+}
+
+.social-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1f2937;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9ca3af !important;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+
+.social-icon:hover{
+    background:#ef4444;
+    color:#ffffff !important;
+    transform:translateY(-3px);
+}
+
+hr{
+    opacity:0.2;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    footer{
+        text-align:center;
+    }
+
+    .social-icon{
+        margin:auto;
+    }
+
+    footer .d-flex{
+        justify-content:center;
+    }
+
+}
