@@ -5,17 +5,19 @@
     box-sizing: border-box;
 }
 
+
 .navbar {
     padding: 15px 0;
+    position:sticky;
 
 }
 
 .navbar-brand {
-    font-size: 46px;
+    font-size: 32px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: white !important;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .navbar-brand:hover{
     color: white;
@@ -23,11 +25,11 @@
 
 .nav-link {
     text-decoration: none;
-    font-size: 28px;
-    margin-right: 50px;
+    font-size: 18px;
+    margin-right: 20px;
     color: rgba(255, 255, 255, 0.8) !important; 
     font-weight: 500;
-    padding: 8px 16px !important;
+    padding: 8px 14px !important;
     border-radius: 8px;
     transition: 0.3s ease;
 }
@@ -54,8 +56,46 @@
     width: 100%;
     display: flex;
     align-items: center;
-    min-height: 70px;
-    padding-top: 0.75rem;   
-    padding-bottom: 0.75rem;
+    min-height: 30px;
+    padding:8px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+body{
+    padding-top: 50px;
 }
 
+
+@media (max-width:768px){
+
+    .custom-navbar{
+        min-height:60px;
+    }
+
+    .navbar-brand{
+        font-size:26px;
+        margin-left:15px;
+    }
+
+    .nav-link{
+        font-size:16px;
+        margin-right:0;
+    }
+
+    .hero{
+        height:140px;
+        padding:0 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero h5{
+        font-size:18px;
+    }
+
+}
