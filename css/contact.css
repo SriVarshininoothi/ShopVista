@@ -1,37 +1,256 @@
-body{
-    background-color: rgb(242, 208, 214);
-    height: 100vh;
+/* ===========================
+   CONTACT PAGE
+=========================== */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    padding: 80px 0;
+}
+body{
+    background:rgb(248, 248, 248);
+    color:#1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Section */
+
+.main{
+    padding:60px 0;
+}
+
+/* ===========================
+   CONTACT INFO CARD
+=========================== */
+
+.contact-info{
+    background:transparent;
+    padding:20px 30px;
+    border-radius:16px;
+    height:100%;
+    margin-left: 80px;
+}
+
+/* Get In Touch Button */
+
+.Touch{
+    background:#fee2e2;
+    color:#ef4444;
+    border:none;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+/* Headings */
+
+.contact-info h2{
+    color:#111827;
+    font-size:32px;
+    font-weight:700;
+    margin:15px 0;
+    
+}
+
+.bi{
+   background:#fee2e2;
+   border-radius:10px;
+   padding: 8px 12px;
+
+}
+
+.contact-info h5{
+    font-size:13px;
+    font-weight:500;
+    color:grey;
+    margin-bottom:5px;
+    text-transform:uppercase;
+    
+}
+.t{
+    color:black;
+    font-weight:bold;
+    font-size: 13px;
+    margin-left:50px;
+
+}
+
+.contact-info p{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+/* Contact Details */
+
+.contact-info .mb-4{
+    margin-top:25px;
+}
+
+.contact-info i{
+    color:#ef4444;
+    font-size:20px;
+    margin-right:10px;
 }
 
 .contact-form{
-    background-color: white;
-    width: 550px;
-    padding: 25px;
-    margin-top: 50px;
-    border-radius: 12px;
-    color:black;
+    min-height: 500px;
+    padding: 50px;
 }
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form{
+    min-height: 760px;
+    padding: 40px;
+    background:#ffffff;
+    padding:35px;
+    width: 800px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    height:900px;
+    
+}
+
+.contact-form h2{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.contact-form label{
+    font-weight:600;
+    margin-bottom:8px;
+    display:block;
+    color:#374151;
+}
+
+.contact-form form{
+    height: 100%;
+}
+/* Inputs */
+
 .form-control{
-    width: 100%;
-
+    width:100%;
+    padding:12px 15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+    box-shadow:none;
+    height: 50px;
 }
+
+textarea.form-control{
+    height: 180px;
+}
+.form-control:focus{
+    border-color:#ef4444;
+    box-shadow:0 0 0 0.2rem rgba(239,68,68,.2);
+}
+
+/* Select */
+
+select.form-control{
+    height:50px;
+}
+
+/* Textarea */
+
+textarea.form-control{
+    resize:none;
+}
+
+/* Submit Button */
+
 .button-control{
-    width: 100%;
-    color: white;
-    background-color: rgb(245, 73, 73);
-    border-radius: 5px;
-    border-width: 0px;
-    height: 40px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    width:100%;
+    background:#ef4444;
+    color:#ffffff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.button-control:hover{
+    background:#dc2626;
+    transition: 0.2s;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+    .contact-info{
+        margin-bottom:30px;
+    }
+
+    .contact-form{
+        margin-top:0;
+        margin-right: 40px;
+    }
+    .contact-form{
+        justify-content: center;
+        align-content: center;
+        margin-left: 50px;
+    }
 
 }
 
-.button-control :hover{
-    
-    
+@media (max-width:768px){
+
+    .contact-info,
+    .contact-form{
+        padding:25px;
+    }
+
+    .contact-info h2,
+    .contact-form h2{
+        font-size:28px;
+        
+    }
+    .contact-form{
+        justify-content: center;
+        align-content: center;
+        margin-left: 50px;
+    }
+
+
+}
+
+@media (max-width:576px){
+    .contactus{
+        font-size: 10px;
+    }
+
+    .Touch{
+        font-size:11px;
+        padding:6px 14px;
+    }
+
+    .contact-info h2,
+    .contact-form h2{
+        font-size:24px;
+    }
+
+    .button-control{
+        font-size:16px;
+    }
+    .contact-form{
+        justify-content: center;
+        align-content: center;
+        margin-left: 50px;
+    }
+
 }
