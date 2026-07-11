@@ -10,7 +10,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    
+
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/hero.css">
@@ -25,7 +25,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="./index.html">
-                <i class="bi bi-bag-heart-fill" style="color: yellow;"></i> ShopVista
+                <i class="bbi bi-bag-heart-fill" style="color: yellow;"></i> ShopVista
             </a>
 
             <!-- Mobile Toggle Button -->
@@ -76,45 +76,44 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Contact Us</h1>
-            <h5>We'd love to hear from you</h5>
+            <h1 class="contactus">Contact Us</h1>
+            <h5 class="love">We'd love to hear from you</h5>
         </div>
     </section>
 
     <!-- Main section -->
 
-    <section class="main">
-        <div class="d-flex flex-row">
-            <div class="col-lg-6 mt-5 mt-lg-0">
+   <section class="main py-5">
+    <div class="container-fluid">
+        <div class="row g-5 align-items-start">
+
+            <!-- Left Side -->
+            <div class="col-lg-5">
 
                 <div class="contact-info p-5">
 
-                    <button class="mb-3">Get In Touch</button>
+                    <button class="Touch mb-3">Get In Touch</button>
 
-                    <h2 class="text-muted">
-                        We're Here to Help
-                    </h2>
+                    <h2 class="text-muted">We're Here to Help</h2>
 
                     <p class="text-secondary">
                         Have a question, feedback, or just want to say hello?
                         Fill out the form and we'll get back to you within 24 hours.
                     </p>
 
-
-
                     <div class="mb-4">
                         <h5><i class="bi bi-envelope me-2"></i>Email</h5>
-                        <p class="text-muted">yamunajth@gmail.com</p>
+                        <p class="t text-muted">yamunajth@gmail.com</p>
                     </div>
 
                     <div class="mb-4">
                         <h5><i class="bi bi-telephone me-2"></i>Phone</h5>
-                        <p class="text-muted">+91 6302777382</p>
+                        <p class="t text-secondary">+91 6302777382</p>
                     </div>
 
                     <div class="mb-4">
                         <h5><i class="bi bi-geo-alt me-2"></i>Address</h5>
-                        <p class="text-muted ">
+                        <p class="t text-muted">
                             42, Rajahmundry,<br>
                             Andhra Pradesh - 533125
                         </p>
@@ -122,7 +121,7 @@
 
                     <div>
                         <h5><i class="bi bi-clock me-2"></i>Working Hours</h5>
-                        <p class="text-muted">
+                        <p class="t text-muted">
                             Mon – Sat, 9:00 AM – 6:00 PM IST
                         </p>
                     </div>
@@ -131,27 +130,30 @@
 
             </div>
 
-            <div class="col-lg-6">
-                <div class="contact-form">
+            <!-- Right Side -->
+            <div class="col-lg-6 ">
+
+                <div class="contact-form p-4">
+
                     <form>
-                        <h2>Send Us a Message</h2>
-                        <label for="firstname">FirstName *</label>
-                        <input id="firstname" type="text" placeholder=" yamuna" class="form-control">
-                        <br>
+
+                        <h2 class="mb-4">Send Us a Message</h2>
+
+                        <label for="firstname">First Name *</label>
+                        <input id="firstname" type="text" placeholder="Yamuna" class="form-control mb-3">
+
                         <label for="lastname">Last Name *</label>
-                        <input id="lastname" type="text" placeholder=" jyothi" class="form-control"/>
-                        <br>
+                        <input id="lastname" type="text" placeholder="Jyothi" class="form-control mb-3">
+
                         <label for="email">Email Address *</label>
-                        <br>
-                        <input type="email" id="email" placeholder="you@example.com" class="form-control">
-                        <br>
+                        <input type="email" id="email" placeholder="you@example.com" class="form-control mb-3">
+
                         <label for="number">Phone Number</label>
-                        <br>
-                        <input type="number" id="number" placeholder="+91 6302777382" class="form-control">
-                        <br>
+                        <input type="tel" id="number" placeholder="+91 6302777382" class="form-control mb-3">
+
                         <label for="subject">Subject *</label>
-                        <br>
-                        <select class="form-control">
+
+                        <select id="subject" class="form-control mb-3">
                             <option>Select a topic</option>
                             <option>Order Inquiry</option>
                             <option>Product Question</option>
@@ -160,23 +162,29 @@
                             <option>Partnership</option>
                             <option>Other</option>
                         </select>
-                        <br>
 
                         <label for="message">Message *</label>
-                        <br>
-                        <textarea cols="60" rows="5" placeholder="Write your message here..." class="form-contol"></textarea>
-                        <br>
-                        <button class="button-control" id="submitBtn">
-                            <i class="material-icons">Send Message</i>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            class="form-control mb-4"
+                            placeholder="Write your message here..."></textarea>
+
+                        <button type="submit" class="button-control">
+                            Send Message
                         </button>
+
                     </form>
+
                 </div>
 
             </div>
+
         </div>
-
-    </section>
-
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
