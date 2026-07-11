@@ -208,45 +208,6 @@ textarea.form-control{
     margin-bottom: 12px;
 }
 
-/* "Frequently Asked Questions" title styling */
-.frequency {
-    color: #1f2937;            /* Clean dark text color */
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    margin-bottom: 24px;
-}
-
-/* Individual FAQ Accordion Items */
-.faq-item {
-    transition: all 0.2s ease-in-out;
-    width:100%;
-}
-
-.faq-item:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
-}
-
-/* Accordion Trigger Buttons */
-.faq-question {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: #1f2937 !important;
-    transition: color 0.2s ease;
-}
-
-/* Accordion Open State Arrow Animation */
-.faq-item.active .bi-chevron-down {
-    transform: rotate(180deg);
-    color: #ef4444 !important;
-}
-
-/* Inside Answer Text */
-.faq-answer {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.925rem;
-    line-height: 1.6;
-}
 .success{
     background-color:#d1f1d1;
     color:#0a850a;
@@ -261,10 +222,32 @@ textarea.form-control{
 .failure{
    color: red;
    font-size: 20px;
-   
-    
 
 }
+.faq-question{
+    background: transparent;
+    border: none;
+    color: #212529;
+    transition: 0.3s;
+}
+
+.faq-question.active{
+    color: #ef4444 !important;
+}
+
+.faq-question.active i{
+    color: #ef4444 !important;
+}
+
+.faq-answer{
+    display:none;
+    background:#fff;
+}
+
+.faq-item{
+    overflow:hidden;
+}
+
 /* ===========================
    RESPONSIVE
 =========================== */
