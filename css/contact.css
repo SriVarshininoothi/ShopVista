@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(242, 208, 214);
+    height: 100vh;
+
+}
+
+.contact-form{
+    background-color: white;
+    width: 550px;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    color:black;
+}
+.form-control{
+    width: 100%;
+
+}
+.button-control{
+    width: 100%;
+    color: white;
+    background-color: rgb(245, 73, 73);
+    border-radius: 5px;
+    border-width: 0px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+.button-control :hover{
+    
+    
+}
