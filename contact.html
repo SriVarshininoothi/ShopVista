@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="./index.html">
-                <i class="bbi bi-bag-heart-fill" style="color: yellow;"></i> ShopVista
+                <i class="bi bi-bag-heart-fill" style="color: yellow;"></i> ShopVista
             </a>
 
             <!-- Mobile Toggle Button -->
@@ -38,7 +39,7 @@
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
 
-                <ul class="navbar-nav ms-auto gap-3 m-5">
+                <ul class="navbar-nav ms-auto gap-3>
 
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html">
@@ -83,108 +84,237 @@
 
     <!-- Main section -->
 
-   <section class="main py-5">
-    <div class="container-fluid">
-        <div class="row g-5 align-items-start">
+    <section class="main py-5">
+        <div class="container-fluid">
+            <div class="row g-5 align-items-start">
 
-            <!-- Left Side -->
-            <div class="col-lg-5">
+                <!-- Left Side -->
+                <div class="col-lg-5">
 
-                <div class="contact-info p-5">
+                    <div class="contact-info p-5">
 
-                    <button class="Touch mb-3">Get In Touch</button>
+                        <button class="Touch mb-3">Get In Touch</button>
 
-                    <h2 class="text-muted">We're Here to Help</h2>
+                        <h2 class="text-muted">We're Here to Help</h2>
 
-                    <p class="text-secondary">
-                        Have a question, feedback, or just want to say hello?
-                        Fill out the form and we'll get back to you within 24 hours.
-                    </p>
-
-                    <div class="mb-4">
-                        <h5><i class="bi bi-envelope me-2"></i>Email</h5>
-                        <p class="t text-muted">yamunajth@gmail.com</p>
-                    </div>
-
-                    <div class="mb-4">
-                        <h5><i class="bi bi-telephone me-2"></i>Phone</h5>
-                        <p class="t text-secondary">+91 6302777382</p>
-                    </div>
-
-                    <div class="mb-4">
-                        <h5><i class="bi bi-geo-alt me-2"></i>Address</h5>
-                        <p class="t text-muted">
-                            42, Rajahmundry,<br>
-                            Andhra Pradesh - 533125
+                        <p class="text-secondary">
+                            Have a question, feedback, or just want to say hello?
+                            Fill out the form and we'll get back to you within 24 hours.
                         </p>
+
+                        <div class="mb-4">
+                            <h5><i class="symbol bi bi-envelope me-2"></i>Email</h5>
+                            <p class="t text-muted">yamunajth@gmail.com</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><i class="symbol bi bi-telephone me-2"></i>Phone</h5>
+                            <p class="t text-secondary">+91 6302777382</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5><i class="symbol bi bi-geo-alt me-2"></i>Address</h5>
+                            <p class="t text-muted">
+                                42, Rajahmundry,<br>
+                                Andhra Pradesh - 533125
+                            </p>
+                        </div>
+
+                        <div>
+                            <h5><i class="symbol bi bi-clock me-2"></i>Working Hours</h5>
+                            <p class="t text-muted">
+                                Mon – Sat, 9:00 AM – 6:00 PM IST
+                            </p>
+                        </div>
+
                     </div>
 
-                    <div>
-                        <h5><i class="bi bi-clock me-2"></i>Working Hours</h5>
-                        <p class="t text-muted">
-                            Mon – Sat, 9:00 AM – 6:00 PM IST
-                        </p>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6 ">
+
+                    <div class="contact-form p-4">
+
+                        <form>
+
+                            <h2 class="mb-4">Send Us a Message</h2>
+
+                            <label for="firstname">First Name *</label>
+                            <input id="firstname" type="text" placeholder="Yamuna" class="form-control mb-3">
+
+                            <label for="lastname">Last Name *</label>
+                            <input id="lastname" type="text" placeholder="Jyothi" class="form-control mb-3">
+
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="you@example.com" class="form-control mb-3">
+
+                            <label for="number">Phone Number</label>
+                            <input type="tel" id="number" placeholder="+91 6302777382" class="form-control mb-3">
+
+                            <label for="subject">Subject *</label>
+
+                            <select id="subject" class="form-control mb-3">
+                                <option>Select a topic</option>
+                                <option>Order Inquiry</option>
+                                <option>Product Question</option>
+                                <option>Return & Refund</option>
+                                <option>General Feedback</option>
+                                <option>Partnership</option>
+                                <option>Other</option>
+                            </select>
+
+                            <label for="message">Message *</label>
+
+                            <textarea id="message" rows="5" class="form-control mb-4"
+                                placeholder="Write your message here..."></textarea>
+
+                            <button type="submit" class="button-control">
+                                Send Message
+                            </button>
+
+                        </form>
+
                     </div>
 
                 </div>
 
             </div>
-
-            <!-- Right Side -->
-            <div class="col-lg-6 ">
-
-                <div class="contact-form p-4">
-
-                    <form>
-
-                        <h2 class="mb-4">Send Us a Message</h2>
-
-                        <label for="firstname">First Name *</label>
-                        <input id="firstname" type="text" placeholder="Yamuna" class="form-control mb-3">
-
-                        <label for="lastname">Last Name *</label>
-                        <input id="lastname" type="text" placeholder="Jyothi" class="form-control mb-3">
-
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" placeholder="you@example.com" class="form-control mb-3">
-
-                        <label for="number">Phone Number</label>
-                        <input type="tel" id="number" placeholder="+91 6302777382" class="form-control mb-3">
-
-                        <label for="subject">Subject *</label>
-
-                        <select id="subject" class="form-control mb-3">
-                            <option>Select a topic</option>
-                            <option>Order Inquiry</option>
-                            <option>Product Question</option>
-                            <option>Return & Refund</option>
-                            <option>General Feedback</option>
-                            <option>Partnership</option>
-                            <option>Other</option>
-                        </select>
-
-                        <label for="message">Message *</label>
-
-                        <textarea
-                            id="message"
-                            rows="5"
-                            class="form-control mb-4"
-                            placeholder="Write your message here..."></textarea>
-
-                        <button type="submit" class="button-control">
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
         </div>
-    </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+
+
+
+    <!-- Common Questions Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+
+                    <!-- Badge Header -->
+                    <h5 class="touch">Common questions</h5>
+
+                    <!-- Main Section Heading -->
+                    <h1 class="frequency">Frequently Asked Questions</h1>
+
+                    <!-- Accordion Wrapper -->
+                    <div class="mt-4 mx-auto" style="max-width: 600px;">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item border rounded-3 mb-3 bg-white shadow-sm text-start">
+                            <button
+                                class="faq-question w-100 btn d-flex justify-content-between align-items-center p-3 fw-semibold border-0 text-dark shadow-none">
+                                <span>How long does delivery take?</span>
+                                <i class="bi bi-chevron-down text-muted"></i>
+                            </button>
+                            <div class="faq-answer px-3 pb-3 text-secondary" style="display: none;">
+                                Standard delivery typically takes 3–5 business days, depending on your location inside
+                                India.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item border rounded-3 mb-3 bg-white shadow-sm text-start">
+                            <button
+                                class="faq-question w-100 btn d-flex justify-content-between align-items-center p-3 fw-semibold border-0 text-dark shadow-none">
+                                <span>Can I return a product?</span>
+                                <i class="bi bi-chevron-down text-muted"></i>
+                            </button>
+                            <div class="faq-answer px-3 pb-3 text-secondary" style="display: none;">
+                                Yes, we offer a 14-day hassle-free return policy for all unused products in their
+                                original packaging.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item border rounded-3 mb-3 bg-white shadow-sm text-start">
+                            <button
+                                class="faq-question w-100 btn d-flex justify-content-between align-items-center p-3 fw-semibold border-0 text-dark shadow-none">
+                                <span>Are the products genuine?</span>
+                                <i class="bi bi-chevron-down text-muted"></i>
+                            </button>
+                            <div class="faq-answer px-3 pb-3 text-secondary" style="display: none;">
+                                Absolutely. All items on ShopVista are sourced directly from authorized brand
+                                distributors.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item border rounded-3 mb-3 bg-white shadow-sm text-start">
+                            <button
+                                class="faq-question w-100 btn d-flex justify-content-between align-items-center p-3 fw-semibold border-0 text-dark shadow-none">
+                                <span>What payment methods are accepted?</span>
+                                <i class="bi bi-chevron-down text-muted"></i>
+                            </button>
+                            <div class="faq-answer px-3 pb-3 text-secondary" style="display: none;">
+                                We accept all major credit/debit cards, UPI payments, Net Banking, and Cash on Delivery
+                                (COD).
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="d-flex align-items-center gap-2 mb-3 text-white fw-bold">
+                        <i class="bi bi-bag-check-fill text-warning"></i> ShopVista
+                    </h4>
+                    <p class="small" style="word-spacing: 4px;">
+                        Your one-stop destination for quality products.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase tracking-wider  small fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+                        <li><a href="index.html" class="text-muted text-decoration-none small footer-link">Home</a></li>
+                        <li><a href="products.html"
+                                class="text-muted text-decoration-none small footer-link">Products</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none small footer-link">About Us</a>
+                        </li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none small footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Connect With Us Column -->
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="text-uppercase tracking-wider small fw-bold mb-3">Connect With Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-muted fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted fs-5 social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-muted fs-5 social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="border-secondary my-4">
+
+            <!-- Copyright Block -->
+            <div class="row">
+                <div class="col text-center">
+                    <p class="small m-0">
+                        © 2026 ShopVista. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
