@@ -1,6 +1,10 @@
 /* ===========================
    CONTACT PAGE
 =========================== */
+html,
+body{
+    overflow-x:hidden;
+}
 
 *{
     margin: 0;
@@ -31,7 +35,7 @@ body{
     padding:20px 30px;
     border-radius:16px;
     height:100%;
-    margin-left: 80px;
+    margin-left: 0;
 }
 
 /* Get In Touch Button */
@@ -58,7 +62,7 @@ body{
     
 }
 
-.bi{
+.symbol{
    background:#fee2e2;
    border-radius:10px;
    padding: 8px 12px;
@@ -105,17 +109,15 @@ body{
 /* ===========================
    CONTACT FORM
 =========================== */
-
 .contact-form{
-    min-height: 760px;
-    padding: 40px;
-    background:#ffffff;
+    width:100%;
+    max-width:700px;
+    margin:0 auto;
+    min-height:auto;
+    background:#fff;
     padding:35px;
-    width: 800px;
     border-radius:16px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    height:900px;
-    
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .contact-form h2{
@@ -185,6 +187,66 @@ textarea.form-control{
     background:#dc2626;
     transition: 0.2s;
 }
+/* Container section background */
+.py-5 {
+    background-color: #fff1f2; /* Soft pink layout background */
+}
+
+/* "Common questions" badge styling */
+.touch {
+    background-color: #fee2e2; /* Light pink pill background */
+    color: #ef4444;            /* Coral/red text color */
+    padding: 6px 16px;
+    border-radius: 50px;       /* Pill shape */
+    font-size: 0.75rem;        /* Small typography */
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    word-spacing: 6px;         /* Adds extra space between words */
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* "Frequently Asked Questions" title styling */
+.frequency {
+    color: #1f2937;            /* Clean dark text color */
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin-bottom: 24px;
+}
+
+/* Individual FAQ Accordion Items */
+.faq-item {
+    transition: all 0.2s ease-in-out;
+    width:100%;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Accordion Trigger Buttons */
+.faq-question {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #1f2937 !important;
+    transition: color 0.2s ease;
+}
+
+/* Accordion Open State Arrow Animation */
+.faq-item.active .bi-chevron-down {
+    transform: rotate(180deg);
+    color: #ef4444 !important;
+}
+
+/* Inside Answer Text */
+.faq-answer {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.925rem;
+    line-height: 1.6;
+}
 
 /* ===========================
    RESPONSIVE
@@ -192,19 +254,14 @@ textarea.form-control{
 
 @media (max-width:992px){
 
+    
+     .contact-form,
     .contact-info{
-        margin-bottom:30px;
+        max-width:100%;
+        width:100%;
+        margin:0;
     }
 
-    .contact-form{
-        margin-top:0;
-        margin-right: 40px;
-    }
-    .contact-form{
-        justify-content: center;
-        align-content: center;
-        margin-left: 50px;
-    }
 
 }
 
@@ -220,11 +277,7 @@ textarea.form-control{
         font-size:28px;
         
     }
-    .contact-form{
-        justify-content: center;
-        align-content: center;
-        margin-left: 50px;
-    }
+    
 
 
 }
@@ -247,10 +300,6 @@ textarea.form-control{
     .button-control{
         font-size:16px;
     }
-    .contact-form{
-        justify-content: center;
-        align-content: center;
-        margin-left: 50px;
-    }
+   
 
 }
