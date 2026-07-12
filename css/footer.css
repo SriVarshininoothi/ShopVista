@@ -2,8 +2,8 @@
    FOOTER
 =========================== */
 
-footer{
-    background:#111827 !important;
+.custom-footer{
+    background-color: #1b2631 !important;
 }
 
 footer h4{
