@@ -1,19 +1,21 @@
 html,
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main{
+
+.main {
     padding: 80px 0;
 }
-body{
-    background:rgb(248, 248, 248);
-    color:#1f2937;
+
+body {
+    background: rgb(248, 248, 248);
+    color: #1f2937;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,277 +25,404 @@ body{
    COMMON CAROUSEL
 =========================== */
 
-.carousel-item{
-    min-height:40vh;
+.carousel-item {
+    min-height: 40vh;
 }
 
 .new-arrivals-banner,
 .hero-banner-slide-1,
-.hero-banner-slide-3{
+.hero-banner-slide-3 {
 
-    min-height:70vh;
+    min-height: 70vh;
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 
-    color:#fff;
+    color: #fff;
 
-    padding:80px 0;
+    padding: 80px 0;
 
-    font-family:system-ui,-apple-system,sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 /* ===========================
    SLIDE 1
 =========================== */
 
-.new-arrivals-banner{
+.new-arrivals-banner {
 
-    background:linear-gradient(135deg,#1e2530 0%,#ff6b6b 100%);
+    background: linear-gradient(135deg, #1e2530 0%, #ff6b6b 100%);
 }
 
-.arrival-tag{
+.arrival-tag {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#333c4d;
-    color:#f1c40f;
+    background: #333c4d;
+    color: #f1c40f;
 
-    padding:8px 18px;
+    padding: 8px 18px;
 
-    border-radius:30px;
+    border-radius: 30px;
 
-    font-size:13px;
-    font-weight:700;
+    font-size: 13px;
+    font-weight: 700;
 
-    letter-spacing:1px;
-    text-transform:uppercase;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.arrival-title{
+.arrival-title {
 
-    font-size:60px;
-    font-weight:800;
+    font-size: 60px;
+    font-weight: 800;
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.arrival-title-highlight{
+.arrival-title-highlight {
 
-    color:#f1c40f;
-    display:block;
+    color: #f1c40f;
+    display: block;
 }
 
-.arrival-subtitle{
+.arrival-subtitle {
 
-    color:#dbe4ee;
+    color: #dbe4ee;
 
-    font-size:20px;
+    font-size: 20px;
 
-    max-width:550px;
+    max-width: 550px;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 }
 
-.arrival-button{
+.arrival-button {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#ef4444;
+    background: #ef4444;
 
-    color:#fff;
+    color: #fff;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    padding:14px 35px;
+    padding: 14px 35px;
 
-    border-radius:10px;
+    border-radius: 10px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.arrival-button:hover{
+.arrival-button:hover {
 
-    background:#dc2626;
-    color:#fff;
+    background: #dc2626;
+    color: #fff;
 }
 
 /* ===========================
    SLIDE 2
 =========================== */
 
-.hero-banner-slide-1{
- background:linear-gradient(to right,#04505e,#ad5d74);
-    
+.hero-banner-slide-1 {
+    background: linear-gradient(to right, #04505e, #ad5d74);
+
 }
 
-.slide-tag{
+.slide-tag {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#423d33;
+    background: #423d33;
 
-    color:#f1c40f;
+    color: #f1c40f;
 
-    padding:8px 18px;
+    padding: 8px 18px;
 
-    border-radius:30px;
+    border-radius: 30px;
 
-    font-size:13px;
+    font-size: 13px;
 
-    font-weight:700;
+    font-weight: 700;
 
-    letter-spacing:1px;
+    letter-spacing: 1px;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.slide-title{
+.slide-title {
 
-    font-size:60px;
+    font-size: 60px;
 
-    font-weight:800;
+    font-weight: 800;
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.slide-title-highlight{
+.slide-title-highlight {
 
-    display:block;
+    display: block;
 
-    color:#f1c40f;
+    color: #f1c40f;
 }
 
-.slide-subtitle{
+.slide-subtitle {
 
-    color:#e2e8f0;
+    color: #e2e8f0;
 
-    font-size:20px;
+    font-size: 20px;
 
-    max-width:550px;
+    max-width: 550px;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 }
 
-.slide-button{
+.slide-button {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#ef4444;
+    background: #ef4444;
 
-    color:#fff;
+    color: #fff;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    padding:14px 35px;
+    padding: 14px 35px;
 
-    border-radius:10px;
+    border-radius: 10px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.slide-button:hover{
+.slide-button:hover {
 
-    background:#dc2626;
+    background: #dc2626;
 
-    color:#fff;
+    color: #fff;
 }
 
 /* ===========================
    SLIDE 3
 =========================== */
 
-.hero-banner-slide-3{
+.hero-banner-slide-3 {
 
-    background:linear-gradient(135deg,#1e2530 0%,#2a6b6b 100%);
+    background: linear-gradient(135deg, #1e2530 0%, #2a6b6b 100%);
 }
 
-.slide-3-tag{
+.slide-3-tag {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#333c4d;
+    background: #333c4d;
 
-    color:#f1c40f;
+    color: #f1c40f;
 
-    padding:8px 18px;
+    padding: 8px 18px;
 
-    border-radius:30px;
+    border-radius: 30px;
 
-    font-size:13px;
+    font-size: 13px;
 
-    font-weight:700;
+    font-weight: 700;
 
-    letter-spacing:1px;
+    letter-spacing: 1px;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.slide-3-title{
+.slide-3-title {
 
-    font-size:60px;
+    font-size: 60px;
 
-    font-weight:800;
+    font-weight: 800;
 
-    line-height:1.2;
+    line-height: 1.2;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.slide-3-title-highlight{
+.slide-3-title-highlight {
 
-    display:block;
+    display: block;
 
-    color:#f1c40f;
+    color: #f1c40f;
 }
 
-.slide-3-subtitle{
+.slide-3-subtitle {
 
-    color:#e2e8f0;
+    color: #e2e8f0;
 
-    font-size:20px;
+    font-size: 20px;
 
-    max-width:550px;
+    max-width: 550px;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 }
 
-.slide-3-button{
+.slide-3-button {
 
-    display:inline-block;
+    display: inline-block;
 
-    background:#ef4444;
+    background: #ef4444;
 
-    color:#fff;
+    color: #fff;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    padding:14px 35px;
+    padding: 14px 35px;
 
-    border-radius:10px;
+    border-radius: 10px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.slide-3-button:hover{
+.slide-3-button:hover {
 
-    background:#dc2626;
+    background: #dc2626;
 
-    color:#fff;
+    color: #fff;
+}
+
+/* ==========================================
+   Shop by Category Section Styles
+   ========================================== */
+
+/* Section Main Container */
+.category {
+    background-color: #f8f9fa;
+    /* Light, clean background */
+}
+
+/* Typography & Subheadings */
+.who {
+    background-color: #ffeef0;
+    color: #ff6f61;
+    /* Soft coral signature brand color */
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    pointer-events: none;
+    /* Keeps it looking like a badge rather than a clickable button */
+}
+
+.headcore {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #212529;
+    margin-top: 0.5rem;
+}
+
+/* Category Grid Layout Space Adjustments */
+.category .row.g-4 {
+    margin-bottom: 1.5rem;
+}
+
+.category .row.g-4:last-child {
+    margin-bottom: 0;
+}
+
+/* Category Cards Styling */
+.category-card {
+    background-color: #ffffff;
+
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    cursor: pointer;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 130px;
+    width: auto;
+
+
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+
+}
+
+/* Category Text Headings */
+.category-card h6 {
+    margin-top: 1.25rem;
+    width: auto;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #343a40;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+    font-size:15px;
+}
+
+/* Icons Design & Circular Backdrop */
+.category-icon {
+    font-size: 1.75rem;
+    color: #ff6f61;
+    /* Matches theme primary color */
+    width: 64px;
+    height: 64px;
+    background-color: #fff1f0;
+    /* Soft tint matching the icon */
+    border-radius: 56px;
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.row {
+    background: transparent;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* ==========================================
+   Interactive Hover Effects
+   ========================================== */
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.07);
+    border-color: #ffe4e2;
+}
+
+/* Scaled up background effect for icon on card hover */
+.category-card:hover .category-icon {
+    background-color: #ff6f61;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.category-card:hover h6 {
+    color: #ff6f61;
 }
