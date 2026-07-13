@@ -426,3 +426,176 @@ body {
 .category-card:hover h6 {
     color: #ff6f61;
 }
+/* ===========================
+   FEATURED PRODUCTS
+=========================== */
+
+.featured{
+    background:#f8fafc;
+    padding:80px 0;
+}
+
+.who{
+    background:#fee2e2;
+    color:#ef4444;
+    border:none;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.head{
+    font-size:42px;
+    font-weight:700;
+    color:#111827;
+    margin-top:20px;
+}
+
+.para{
+    color:#6b7280;
+    font-size:18px;
+}
+
+/* ===========================
+   PRODUCT CARD
+=========================== */
+
+.featured-card{
+    background:fff;
+    height:auto;
+    border-radius:18px;
+    padding:25px;
+    text-align:start;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    
+}
+
+.featured-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+/* Product Image */
+
+.feature-icon{
+    background:#ffe9e9;
+    width:100%;
+    height:170px;
+    object-fit:contain;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.featured-card:hover .feature-icon{
+    transform:scale(1.08);
+}
+
+/* Category */
+
+.featured-card h6{
+    color:rgb(11, 194, 133);
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+/* Product Name */
+
+.featured-card h5{
+    font-size:14px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:18px;
+    min-height:60px;
+}
+
+/* Price */
+
+.featured-card h2{
+    font-size:28px;
+    color:#111827;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.featured-card del{
+    font-size:17px;
+    color:#9ca3af;
+    margin-left:8px;
+}
+
+.featured-card span{
+    background:#dcfce7;
+    color:#16a34a;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:13px;
+    margin-left:10px;
+}
+
+/* Button */
+
+.featured-card button{
+    width:100%;
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.featured-card button:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .head{
+        font-size:34px;
+    }
+
+    .feature-icon{
+        width:150px;
+        height:150px;
+    }
+
+    .featured-card h3{
+        font-size:20px;
+    }
+}
+
+@media(max-width:768px){
+
+    .head{
+        font-size:28px;
+    }
+
+    .para{
+        font-size:16px;
+    }
+
+    .feature-icon{
+        width:130px;
+        height:130px;
+    }
+
+    .featured-card{
+        padding:20px;
+    }
+
+    .featured-card h2{
+        font-size:24px;
+    }
+}
