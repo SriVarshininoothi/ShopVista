@@ -97,7 +97,7 @@
                         class="form-control"
                         placeholder="Search products...">
 
-                    <select class="form-select category">
+                    <select class="form-select category" id="searhcategory">
                         <option>All Categories</option>
                         <option>Beauty</option>
                         <option>Sunglasses</option>
@@ -125,7 +125,7 @@
                         <option>Tops</option>
                     </select>
 
-                    <select class="form-select sort">
+                    <select class="form-select sort" id="sort">
                         <option>Sort By</option>
                         <option>Price: Low → High</option>
                         <option>Price: High → Low</option>
@@ -137,13 +137,23 @@
     </div>
 </section>
 
+<!-- Product List -->
+
+<section class="main py-5">
+
+    <div class="countProduct" id="productFound"></div>
+
+    <div class="list" id="productsContainer"></div>
+
+</section>
 
 
 
 
 
 
-
+<script src="./js/product.js"></script>
+<script src="./js/api.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
