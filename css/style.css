@@ -14,7 +14,8 @@ body {
 }
 
 body {
-    background: rgb(248, 248, 248);
+   background-color: #fff1f2;
+    height: 100vh;
     color: #1f2937;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,7 +34,7 @@ body {
 .hero-banner-slide-1,
 .hero-banner-slide-3 {
 
-    min-height: 70vh;
+    min-height: 40vh;
 
     display: flex;
     align-items: center;
@@ -306,7 +307,7 @@ body {
 
 /* Section Main Container */
 .category {
-    background-color: #f8f9fa;
+  background-color: #fff1f2;
     /* Light, clean background */
 }
 
@@ -431,21 +432,10 @@ body {
 =========================== */
 
 .featured{
-    background:#f8fafc;
+   background-color: #fff1f2;
     padding:80px 0;
 }
 
-.who{
-    background:#fee2e2;
-    color:#ef4444;
-    border:none;
-    padding:8px 18px;
-    border-radius:30px;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-}
 
 .head{
     font-size:42px;
@@ -464,13 +454,15 @@ body {
 =========================== */
 
 .featured-card{
-    background:fff;
+    background:linear-gradient(180deg, #FFF5F3,#FFF8F6);
     height:auto;
     border-radius:18px;
     padding:25px;
     text-align:start;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
     transition:all .3s ease;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -482,17 +474,26 @@ body {
 /* Product Image */
 
 .feature-icon{
-    background:#ffe9e9;
-    width:100%;
-    height:170px;
+    max-width:160px;
+    max-height: 160px;
+    width: 100%;
+    height:auto;
     object-fit:contain;
-    margin-bottom:20px;
-    transition:.3s;
+    display:block;
+    margin:0 auto 20px;
+    background:transparent;
+}.image-box{
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .featured-card:hover .feature-icon{
     transform:scale(1.08);
+    transition:.3s;
 }
+
 
 /* Category */
 
@@ -501,7 +502,7 @@ body {
     font-size:14px;
     font-weight:700;
     letter-spacing:1px;
-    margin-bottom:10px;
+   
 }
 
 /* Product Name */
@@ -510,8 +511,9 @@ body {
     font-size:14px;
     font-weight:700;
     color:#1f2937;
-    margin-bottom:18px;
-    min-height:60px;
+    margin-bottom:1px;
+    min-height:10px;
+    line-height: 1.4;
 }
 
 /* Price */
@@ -520,29 +522,23 @@ body {
     font-size:28px;
     color:#111827;
     font-weight:700;
-    margin-bottom:20px;
+
 }
 
 .featured-card del{
-    font-size:17px;
+    font-size:13px;
     color:#9ca3af;
-    margin-left:8px;
+    margin-left:2px;
 }
 
-.featured-card span{
-    background:#dcfce7;
-    color:#16a34a;
-    padding:4px 10px;
-    border-radius:20px;
-    font-size:13px;
-    margin-left:10px;
-}
+
 
 /* Button */
 
 .featured-card button{
+    margin-top: auto;
     width:100%;
-    background:#ef4444;
+    background:#eb5e5e;
     color:#fff;
     border:none;
     padding:12px;
@@ -554,48 +550,355 @@ body {
 
 .featured-card button:hover{
     background:#dc2626;
+    transform:translateY(-2px);
+}
+.star{
+    color: #FFD700; 
+    font-size: 15px;
+    
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+.price-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:8px 0;
+}
 
-@media(max-width:992px){
+.price{
+    font-size:16px;
+    font-weight:700;
+    color:#ef4444;
+    background-color: white;
+}
+
+.offer{
+    background:#09c2c5;
+    color:white;
+    padding:4px 10px;
+    border-radius:20px;
+    font-weight: bold;
+}
+p{
+  font-size: 15px;
+    margin-left: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* ==========================
+   Large Devices (≤992px)
+========================== */
+
+@media (max-width:992px){
+
+    /* Banner */
+
+    .arrival-title,
+    .slide-title,
+    .slide-3-title{
+        font-size:48px;
+    }
+
+    .arrival-subtitle,
+    .slide-subtitle,
+    .slide-3-subtitle{
+        font-size:18px;
+    }
+
+    /* Category */
+
+    .category .row{
+        margin:0 20px;
+    }
+
+    .category-card{
+        height:130px;
+    }
+
+    .category-icon{
+        width:60px;
+        height:60px;
+        font-size:24px;
+    }
+
+    /* Featured */
 
     .head{
         font-size:34px;
     }
 
-    .feature-icon{
-        width:150px;
-        height:150px;
-    }
-
-    .featured-card h3{
-        font-size:20px;
-    }
-}
-
-@media(max-width:768px){
-
-    .head{
-        font-size:28px;
-    }
-
-    .para{
-        font-size:16px;
-    }
-
-    .feature-icon{
-        width:130px;
-        height:130px;
+    .headcore{
+        font-size:30px;
     }
 
     .featured-card{
         padding:20px;
     }
 
-    .featured-card h2{
-        font-size:24px;
+    .feature-icon{
+        width:150px;
+        height:150px;
+        display:block;
+        margin:0 auto 20px;
     }
+
+    .featured-card h3{
+        font-size:20px;
+    }
+
+}
+
+/* ==========================
+   Tablet (≤768px)
+========================== */
+
+@media (max-width:768px){
+
+    /* Banner */
+
+    .carousel-item{
+        min-height:auto;
+    }
+
+    .new-arrivals-banner,
+    .hero-banner-slide-1,
+    .hero-banner-slide-3{
+        min-height:60vh;
+        padding:60px 25px;
+        text-align:center;
+    }
+
+    .arrival-title,
+    .slide-title,
+    .slide-3-title{
+        font-size:36px;
+    }
+
+    .arrival-subtitle,
+    .slide-subtitle,
+    .slide-3-subtitle{
+        font-size:16px;
+        max-width:100%;
+    }
+
+    .arrival-button,
+    .slide-button,
+    .slide-3-button{
+        padding:12px 26px;
+    }
+
+    /* Category */
+
+    .category .row{
+        margin:0;
+    }
+
+    .category-card{
+        height:130px;
+        padding:20px;
+    }
+
+    .category-icon{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+
+    .category-card h6{
+        font-size:14px;
+    }
+
+    /* Heading */
+
+    .head{
+        font-size:30px;
+    }
+
+    .headcore{
+        font-size:26px;
+    }
+
+    .para{
+        font-size:16px;
+    }
+
+    /* Featured */
+
+    .featured-card{
+        text-align:center;
+        padding:20px;
+    }
+
+  .feature-icon{
+    display: block;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+    .featured-card h3{
+        font-size:20px;
+        min-height:auto;
+    }
+
+    .price-box{
+        justify-content:center;
+    }
+
+    .featured-card button{
+        width:100%;
+    }
+    .featured-card hr{
+
+          border: 0;
+    border-top: 1px solid #f3d5d5;
+    margin: 18px 0;
+
+}
+
+}
+
+/* ==========================
+   Mobile (≤576px)
+========================== */
+
+@media (max-width:576px){
+
+    /* Banner */
+
+    .carousel-item{
+        min-height:320px;
+    }
+
+    .new-arrivals-banner,
+    .hero-banner-slide-1,
+    .hero-banner-slide-3{
+        min-height:320px;
+        padding:40px 20px;
+        text-align:start;
+    }
+
+    .arrival-tag,
+    .slide-tag,
+    .slide-3-tag{
+        font-size:11px;
+        padding:6px 14px;
+    }
+
+    .arrival-title,
+    .slide-title,
+    .slide-3-title{
+        font-size:28px;
+    }
+
+    .arrival-subtitle,
+    .slide-subtitle,
+    .slide-3-subtitle{
+        font-size:15px;
+        margin-bottom:20px;
+    }
+
+    .arrival-button,
+    .slide-button,
+    .slide-3-button{
+        padding:10px 20px;
+        font-size:14px;
+    }
+
+    /* Headings */
+
+    .head{
+        font-size:26px;
+    }
+
+    .headcore{
+        font-size:22px;
+    }
+
+    .para{
+        font-size:15px;
+    }
+
+    /* Category */
+
+    .category .row{
+        margin:0;
+    }
+
+    .category-card{
+        height:120px;
+        padding:15px;
+    }
+
+    .category-icon{
+        width:70px;
+        height:70px;
+        font-size:20px;
+    }
+
+    .category-card h6{
+        font-size:13px;
+        margin-top:10px;
+    }
+
+    /* Featured */
+
+    .featured{
+        padding:50px 0;
+    }
+    
+    .featured .row{
+        margin:0;
+    }
+
+
+    .featured-card{
+        width:100%;
+        padding:18px;
+        border-radius:15px;
+        text-align:start;
+        border:1px solid grey;
+    }
+
+    .feature-icon{
+        object-fit: contain;
+        width:120px;
+        height:120px;
+    }
+
+    .featured-card h5{
+        font-size:12px;
+    }
+
+    .featured-card h3{
+        font-size:16px;
+        line-height:1.4;
+    }
+
+    .price-box{
+        justify-content:start;
+        gap:8px;
+        flex-wrap:wrap;
+    }
+
+    .price{
+        font-size:18px;
+    }
+
+    .offer{
+        font-size:12px;
+        padding:3px 8px;
+    }
+
+    .featured-card button{
+        width:100%;
+        padding:10px;
+        font-size:14px;
+    }
+
 }
