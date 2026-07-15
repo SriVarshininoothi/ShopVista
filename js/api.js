@@ -17,7 +17,7 @@ async function getProduct() {
                 <div class="card">
 
                     <button class="discountp">
-                        ${Math.ceil(product.discountPercentage)}% OFF
+                        ${Math.ceil(product.discountPercentage)}%
                     </button>
 
                     <img src="${product.thumbnail}" alt="${product.title}">
@@ -26,17 +26,30 @@ async function getProduct() {
                         ${product.availabilityStatus}
                     </button>
 
-                    <div class="bg">
+                 <div class="bg">
 
-                        <h5>${product.category}</h5>
+    <h5 class="category1">${product.category}</h5>
 
-                        <h6>${product.title}</h6>
+    <h6 class="title">${product.title}</h6>
 
-                        <p>⭐ ${product.rating}</p>
+    <div>
 
-                    </div>
 
-                </div>
+</div>
+    <div class="d-flex align-items-center gap-1">
+        <i class="bi bi-star-fill star"></i>
+        <i class="bi bi-star-fill star"></i>
+        <i class="bi bi-star-fill star"></i>
+        <i class="bi bi-star-fill star"></i>
+        <i class="bi bi-star-half star"></i>
+
+        <span>${product.rating}</span>
+    </div>    
+    <h5 class="price1">$${product.price}</h5>
+    
+
+</div>
+</div>
 
             `;
 
