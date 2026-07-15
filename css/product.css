@@ -97,19 +97,51 @@ body {
     height:400px;
     position: relative;
     background-color: white;
+    text-align: start;
+
+   
    
 
 }
 
 .card img{
 
-    background-color: antiquewhite;
+    background-color: #FFF8F8;
     width: 100%;
     height:200px;
+    object-fit: cover;
+    padding:10px;
 
 
     
 }
+.category1{
+
+     color: #09c2c5;
+     font-size: 13px;
+     font-weight: bold;
+
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     justify-content: start;
+
+}
+.title{
+
+    font-weight: bold;
+    font-size: 15px;
+   justify-content: start;
+
+}
+.price1{
+    
+     font-size: 18px;
+     color: #ef4444;
+     font-weight: bold;
+     margin-top: 12px;
+
+}
+
 
 .discountp{
 
@@ -125,8 +157,8 @@ body {
     transform: rotate(0deg);
     transition: .3s;
     opacity: 1;
-    padding: 7px;
-    width:50px;
+    padding: 8px 12px;
+    width:auto;
     margin-left: 12px;
     margin-top: 10px;
     
@@ -154,7 +186,33 @@ body {
 }
 
 
+.star{
+    color:#facc15;
+    font-size:14px;
+    margin-left: 1px;
+}
 
+.bg{
+    padding:15px;
+}
+
+.bg .d-flex{
+    margin-top:8px;
+}
+
+.bg span{
+    font-size:14px;
+    color:#6b7280;
+}
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    border: 1px solid red;
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
 
 @media (max-width:768px){
 
