@@ -2,7 +2,8 @@
 const productsContainer = document.getElementById("productsContainer");
 const productFound = document.getElementById("productFound");
 const searchcategory = document.getElementById("searchcategory");
-
+const searchproduct = document.getElementById("searchproduct");
+const sortby = document.getElementById("sort");
 
 
 
@@ -138,27 +139,88 @@ async function getCategories() {
 
 getCategories();
 
-searchcategory.addEventListener("change", function () {
-
-    console.log(this.value); // Check selected value
-
-    if (this.value === "") {
-        displayProducts(allProducts);
-        return;
-    }
-
-    const filteredProducts = allProducts.filter(product =>
-        product.category === this.value
-    );
-
-    console.log(filteredProducts);
-
-    displayProducts(filteredProducts);
-
-});
 
 //search input 
+function getSearchProduct() {
 
+    const searchText = searchproduct.value.toLowerCase().trim();
+const selectedCategory = searchcategory.value;
+    const filteredProducts = allProducts.filter((product) => {
+
+        const matchSearch = 
+            product.title.toLowerCase().includes(searchText) ||
+            product.category.toLowerCase().includes(searchText);
+        
+            const matchCategory =
+            selectedCategory ==="" || product.category===selectedCategory;
+    
+            return matchSearch && matchCategory;
+
+    });
+
+    if (filteredProducts.length > 0) {
+
+        displayProducts(filteredProducts);
+
+    } else {
+
+        productsContainer.innerHTML = `
+            <div class="col-12 text-center py-5">
+
+                <i class="bi bi-search fs-1 text-secondary"></i>
+
+                <h4>No Products Found</h4>
+
+                <p>Try a different search or category.</p>
+
+                <button id="clearBtn" class="btn btn-danger">
+                    Clear Filters
+                </button>
+
+            </div>
+        `;
+
+        productFound.innerHTML = `
+            <h5 class="foundcount">0 Products Found</h5>
+        `;
+
+        document.getElementById("clearBtn").addEventListener("click", () => {
+
+            searchproduct.value = "";
+
+            displayProducts(allProducts);
+
+        });
+
+    }
+
+}
+function sortProducts() {
+
+    let products = [...allProducts];
+
+    if (sortby.value === "low") {
+
+        products.sort((a, b) => a.price - b.price);
+
+    } 
+    else if (sortby.value === "high") {
+
+        products.sort((a, b) => b.price - a.price);
+
+    } 
+    else if (sortby.value === "rating") {
+
+        products.sort((a, b) => b.rating - a.rating);
+
+    }
+
+    displayProducts(products);
+
+}
+searchproduct.addEventListener("input", getSearchProduct);
+searchcategory.addEventListener("change", getSearchProduct);
+sortby.addEventListener("change", sortProducts);
 
 function getStars(rating) {
 
