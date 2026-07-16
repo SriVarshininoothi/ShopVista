@@ -82,81 +82,84 @@
     </section>
     <!-- search card -->
     <section class="search py-5">
-    <div class="container">
-       
-
-                <form class="searchbar">
-
-                    <div class="searchicon">
-                        <i class="bi bi-search"></i>
-                    </div>
-
-                    <input
-                        type="search"
-                        id="searchproduct"
-                        class="form-control"
-                        placeholder="Search products...">
-
-                    <select class="form-select category" id="searhcategory">
-                        <option>All Categories</option>
-                        <option>Beauty</option>
-                        <option>Sunglasses</option>
-                        <option>Fragrances</option>
-                        <option>Furniture</option>
-                        <option>Groceries</option>
-                        <option>Home Decoration</option>
-                        <option>Laptop</option>
-                        <option>Smartphones</option>
-                        <option>Men's Shirts</option>
-                        <option>Men's Shoes</option>
-                        <option>Men's Watches</option>
-                        <option>Home Accessories</option>
-                        <option>Kitchen Accessories</option>
-                        <option>Skin Care</option>
-                        <option>Motorcycle</option>
-                        <option>Tablets</option>
-                        <option>Sports Accessories</option>
-                        <option>Vehicle</option>
-                        <option>Women's Bags</option>
-                        <option>Women's Dresses</option>
-                        <option>Women's Shoes</option>
-                        <option>Women's Watches</option>
-                        <option>Women's Jewellery</option>
-                        <option>Tops</option>
-                    </select>
-
-                    <select class="form-select sort" id="sort">
-                        <option>Sort By</option>
-                        <option>Price: Low → High</option>
-                        <option>Price: High → Low</option>
-                        <option>Top Rated</option>
-                    </select>
-
-                </form>
-
-    </div>
-</section>
-
-<!-- Product List -->
-
-<section class="main py-5">
-
-    <div class="countProduct" id="productFound"></div>
-
-    <div class="list" id="productsContainer"></div>
-
-</section>
+        <div class="container">
 
 
+            <form class="searchbar">
+
+                <div class="searchicon">
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <input type="search" id="searchproduct" class="form-control" placeholder="Search products...">
+
+                <select class="form-select category" id="searhcategory">
+                    <option>All Categories</option>
+                    <option>Beauty</option>
+                    <option>Sunglasses</option>
+                    <option>Fragrances</option>
+                    <option>Furniture</option>
+                    <option>Groceries</option>
+                    <option>Home Decoration</option>
+                    <option>Laptop</option>
+                    <option>Smartphones</option>
+                    <option>Men's Shirts</option>
+                    <option>Men's Shoes</option>
+                    <option>Men's Watches</option>
+                    <option>Home Accessories</option>
+                    <option>Kitchen Accessories</option>
+                    <option>Skin Care</option>
+                    <option>Motorcycle</option>
+                    <option>Tablets</option>
+                    <option>Sports Accessories</option>
+                    <option>Vehicle</option>
+                    <option>Women's Bags</option>
+                    <option>Women's Dresses</option>
+                    <option>Women's Shoes</option>
+                    <option>Women's Watches</option>
+                    <option>Women's Jewellery</option>
+                    <option>Tops</option>
+                </select>
+
+                <select class="form-select sort" id="sort">
+                    <option>Sort By</option>
+                    <option>Price: Low → High</option>
+                    <option>Price: High → Low</option>
+                    <option>Top Rated</option>
+                </select>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Product List -->
+
+    <section class="main py-5">
+
+        <div class="countProduct" id="productFound">
+
+        </div>
+
+        <div class="container py-5">
+            
+            <div class="row g-4" id="productsContainer">
+
+            </div>
+
+        </div>
+    </section>
 
 
 
 
-<script src="./js/product.js"></script>
-<script src="./js/api.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/api.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
