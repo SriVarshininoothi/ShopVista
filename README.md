@@ -130,35 +130,6 @@ The website is optimized for
 
 ---
 
-## 🚀 Installation
-
-Clone the repository
-
-```bash
-[https://github.com/SriVarshininoothi/ShopVista.git](https://github.com/SriVarshininoothi/ShopVista)
-```
-
-Open the project folder
-
-```bash
-cd ShopVista
-```
-
-Run using VS Code Live Server.
-
----
-
-## 📸 Screenshots
-
-Add screenshots of
-
-- Home Page
-- Products Page
-- About Page
-- Contact Page
-
----
-
 ## 👩‍💻 Author
 
 **Noothi Srivarshini**
@@ -167,7 +138,7 @@ GitHub:
 https://github.com/SriVarshininoothi
 
 LinkedIn:
-(Add your LinkedIn profile URL)
+(https://www.linkedin.com/in/noothi-srivarshini-918ba5240/)
 
 ---
 
