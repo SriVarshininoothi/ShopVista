@@ -6,6 +6,8 @@ const searchproduct = document.getElementById("searchproduct");
 const sortby = document.getElementById("sort");
 
 
+const params = new URLSearchParams(window.location.search);
+const urlCategory = params.get("category");
 
 let allProducts = [];
 
@@ -67,43 +69,6 @@ function displayProducts(products) {
 
 }
 
-// Fetch All Products
-async function getProducts() {
-
-    try {
-
-        // Fetch all
-        const response = await fetch("https://dummyjson.com/products?limit=194");
-
-        if (!response.ok) {
-            throw new Error("Failed to fetch products");
-        }
-
-        const data = await response.json();
-
-        allProducts = data.products;
-        displayProducts(allProducts);
-
-        console.log("Total Products :", data.total);
-        console.log("Fetched Products :", data.products.length);
-
-
-
-    } catch (error) {
-
-        console.log(error);
-
-        productsContainer.innerHTML = `
-            <h3 class="text-center text-danger">
-                Failed to load products.
-            </h3>
-        `;
-    }
-
-}
-
-getProducts();
-
 // load categories
 
 async function getCategories() {
@@ -137,7 +102,63 @@ async function getCategories() {
 
 }
 
-getCategories();
+
+
+// Fetch All Products
+async function getProducts() {
+
+    try {
+
+        // Fetch all
+        const response = await fetch("https://dummyjson.com/products?limit=194");
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch products");
+        }
+
+        const data = await response.json();
+
+        allProducts = data.products;
+        
+         if (urlCategory) {
+
+            searchcategory.value = urlCategory;
+            filterProducts();
+
+        } else {
+
+            displayProducts(allProducts);
+
+        }
+
+        console.log("Total Products :", data.total);
+        console.log("Fetched Products :", data.products.length);
+
+
+
+    } catch (error) {
+
+        console.log(error);
+
+        productsContainer.innerHTML = `
+            <h3 class="text-center text-danger">
+                Failed to load products.
+            </h3>
+        `;
+    }
+
+}
+
+async function init() {
+
+    await getCategories();
+    await getProducts();
+
+}
+
+init();
+
+
 
 
 //filterproducts
@@ -176,12 +197,12 @@ function filterProducts() {
 
         filteredProducts.sort((a, b) => a.price - b.price);
 
-    } 
+    }
     else if (sortValue === "high") {
 
         filteredProducts.sort((a, b) => b.price - a.price);
 
-    } 
+    }
     else if (sortValue === "rating") {
 
         filteredProducts.sort((a, b) => b.rating - a.rating);
