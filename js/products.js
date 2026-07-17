@@ -140,23 +140,53 @@ async function getCategories() {
 getCategories();
 
 
-//search input 
-function getSearchProduct() {
+//filterproducts
 
+function filterProducts() {
+
+    let filteredProducts = [...allProducts];
+
+    // Search
     const searchText = searchproduct.value.toLowerCase().trim();
-const selectedCategory = searchcategory.value;
-    const filteredProducts = allProducts.filter((product) => {
 
-        const matchSearch = 
+    if (searchText !== "") {
+
+        filteredProducts = filteredProducts.filter(product =>
             product.title.toLowerCase().includes(searchText) ||
-            product.category.toLowerCase().includes(searchText);
-        
-            const matchCategory =
-            selectedCategory ==="" || product.category===selectedCategory;
-    
-            return matchSearch && matchCategory;
+            product.category.toLowerCase().includes(searchText)
+        );
 
-    });
+    }
+
+    // Category
+    const selectedCategory = searchcategory.value;
+
+    if (selectedCategory !== "") {
+
+        filteredProducts = filteredProducts.filter(product =>
+            product.category === selectedCategory
+        );
+
+    }
+
+    // Sort
+    const sortValue = sortby.value;
+
+    if (sortValue === "low") {
+
+        filteredProducts.sort((a, b) => a.price - b.price);
+
+    } 
+    else if (sortValue === "high") {
+
+        filteredProducts.sort((a, b) => b.price - a.price);
+
+    } 
+    else if (sortValue === "rating") {
+
+        filteredProducts.sort((a, b) => b.rating - a.rating);
+
+    }
 
     if (filteredProducts.length > 0) {
 
@@ -187,40 +217,21 @@ const selectedCategory = searchcategory.value;
         document.getElementById("clearBtn").addEventListener("click", () => {
 
             searchproduct.value = "";
+            searchcategory.value = "";
+            sortby.value = "";
 
-            displayProducts(allProducts);
+            filterProducts();
 
         });
 
     }
 
 }
-function sortProducts() {
+searchproduct.addEventListener("input", filterProducts);
+searchcategory.addEventListener("change", filterProducts);
+sortby.addEventListener("change", filterProducts);
 
-    let products = [...allProducts];
-
-    if (sortby.value === "low") {
-
-        products.sort((a, b) => a.price - b.price);
-
-    } 
-    else if (sortby.value === "high") {
-
-        products.sort((a, b) => b.price - a.price);
-
-    } 
-    else if (sortby.value === "rating") {
-
-        products.sort((a, b) => b.rating - a.rating);
-
-    }
-
-    displayProducts(products);
-
-}
-searchproduct.addEventListener("input", getSearchProduct);
-searchcategory.addEventListener("change", getSearchProduct);
-sortby.addEventListener("change", sortProducts);
+//stars
 
 function getStars(rating) {
 
