@@ -135,7 +135,7 @@ The website is optimized for
 Clone the repository
 
 ```bash
-https://github.com/SriVarshininoothi/ShopVista.git
+[https://github.com/SriVarshininoothi/ShopVista.git](https://github.com/SriVarshininoothi/ShopVista)
 ```
 
 Open the project folder
